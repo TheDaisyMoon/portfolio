@@ -1,0 +1,381 @@
+.container-fluid
+{
+    margin: 0;
+    padding: 0;
+    background: rgb(69,46,60);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:link
+{
+    cursor: pointer;
+}
+
+.row
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.col
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header
+{
+    height: auto;
+    width: 100%;
+    background: url('images/pattern5.png');
+    margin: 0;
+    padding-top: 8vw;
+    padding-bottom: 8vw;    
+    animation: fadeIn 3s;
+    
+}
+
+@keyframes fadeIn 
+{
+    from 
+    {
+        opacity: 0;
+    } 
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+
+.logo h3
+{
+    font-size: 3vw;
+    color: #FF888F;
+    text-shadow: 3px 3px 3px rgb(69,46,60);
+}
+
+.logo a
+{
+    text-decoration: none!important;
+    font-size: 8vw;
+    color:  #ffa266;;
+    text-shadow: 3px 3px 3px rgb(69,46,60);
+}
+
+
+.col-md-2
+{
+    padding: 0;
+}
+
+nav
+{
+    position: sticky !important;
+}
+.navbar a
+{
+    text-decoration: none!important;
+    padding: 0;
+    text-align: center;
+    font-size: 2vw;
+    color:rgb(69,46,60)!important;
+    text-shadow: 1px 1px 1px rgba(244, 78, 125, 0.349);
+
+}
+
+.navbar a:hover
+{
+    padding: 0;
+    text-align: center;
+    font-size: 2.4vw;
+    font-weight: bold;
+    color: #F44E7C!important;
+    text-shadow: 1px 1px 1px rgb(69,46,60);
+
+}
+.bg-light
+{
+    background: #ffa266!important;
+    
+}
+
+.navbar
+{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    position: fixed;
+}
+
+.navbar img
+{
+    width: 10%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#aboutme
+{
+    padding: 2vh;
+    text-align: justify;
+    color: rgb(69,46,60);
+    font-size: 2vw;
+    background: rgba(255, 136, 144, 0.801);
+    width: 90%;
+    margin: 2vh auto;
+    box-shadow: 3px 3px 0px #ffa3669a;
+    border: 5px double rgb(69,46,60);
+    
+}
+
+#aboutme h2
+{
+    font-size: 3vw;
+    color: #ffa266;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(69,46,60);
+}
+
+.selfie img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: 5px 5px 5px rgb(69,46,60);
+    animation: fadeIn 3s;
+    animation-iteration-count: 3;
+}
+
+
+@keyframes fadeIn 
+{
+    from 
+    {
+        opacity: 0;
+    } 
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+
+.selfie img:hover
+{
+    width: 150%;
+    opacity: 1;
+    border: 3px solid #ffa266;
+}
+
+#portfolio
+{
+    padding: 2vh;
+    text-align: justify;
+    color: rgb(69,46,60);
+    font-size: 2vw;
+    background: #ffa266;
+    width: 70%;
+    margin: 2vh 2vh 2vh auto;
+    box-shadow: 3px 3px 0px #ffa3669a;
+    border: 5px double rgb(69,46,60);
+    animation: fadeIn 4s;
+}
+
+
+@keyframes fadeIn 
+{
+    from 
+    {
+        opacity: 0;
+    } 
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+
+.card-body
+{
+    text-align: justify;
+}
+
+
+.btn-primary
+{
+    background: rgb(69,46,60);
+    color: rgba(255, 136, 144, 0.801);
+    border: 1px solid rgba(255, 136, 144, 0.801);
+}
+
+.btn-primary:hover
+{
+    background: rgb(69,46,60);
+    color: #F44E7C;
+    border: 1px solid #F44E7C;
+    font-style: italic;
+}
+
+.card 
+{
+    background : rgba(255, 136, 144, 0.801);
+    border: 5px double rgb(69,46,60);
+    z-index: 1!important;
+}
+
+.card img
+{
+    width: 100%;
+    border-bottom: 5px double rgb(69,46,60);
+    z-index: 10;
+}
+
+.card img:hover
+{
+    width: 120%;
+    z-index: 20!important;
+    /*voir pourquoi ça marche pas ???*/
+}
+.card h5
+
+{
+    font-size: 2vw;
+    color: #ffa266;;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(69,46,60);
+}
+
+.card p
+{
+    color: rgb(69,46,60);
+    font-size: 1.5vw;
+}
+
+.bg-primary
+{
+    background : rgba(255, 136, 144, 0.801)!important;
+    border: 5px double rgb(69,46,60)!important;
+}
+
+.blockquote-footer
+{
+    background: rgb(69,46,60);
+    border: 1px solid rgba(255, 136, 144, 0.801);
+    color: rgba(255, 136, 144, 0.801)!important;
+}
+
+.text-muted
+{    
+    color: rgba(255, 136, 144, 0.801)!important;
+    background: rgb(69,46,60);
+    
+}
+
+.lienportf
+{
+    background: rgb(69,46,60);
+    color: rgba(255, 136, 144, 0.801);
+    border: 1px solid rgba(255, 136, 144, 0.801);
+    padding: 1vw; 
+    font-size: 1.5vw;  
+
+}
+
+.lienportf:hover
+{
+    text-decoration: none;
+    background: rgba(69, 46, 60, 0.856);
+    color: #F44E7C;
+    border: 1px solid #F44E7C;
+    padding: 1vw;
+}
+
+#skills
+{
+    padding: 2vh;
+    text-align: justify;
+    color: rgb(69,46,60);
+    font-size: 2vw;
+    background: rgba(255, 136, 144, 0.801);
+    width: 50%;
+    margin: 2vh auto 2vh 10vh;
+    box-shadow: 3px 3px 0px #ffa3669a;
+    border: 5px double rgb(69,46,60);
+}
+
+
+#skills h2
+{
+    font-size: 3vw;
+    color: #ffa266;;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(69,46,60);
+}
+
+#skills img
+{
+    width: 50%;
+    margin: 1vw;
+}
+
+.forcont
+{
+    padding: 2vh;
+    text-align: justify;
+    color: rgb(69,46,60);
+    font-size: 2vw;
+    background: rgba(255, 136, 144, 0.801);
+    width: 50%;
+    margin: 2vh auto 2vh 10vh;
+    box-shadow: 4px 4px 4px #9C5F6E;
+    border: 5px double rgb(69,46,60);
+}
+
+.forcont h2
+{
+    font-size: 3vw;
+    color: #ffa266;;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(69,46,60);
+}
+
+.form-control
+{
+    background: #ffa266 ;
+    opacity: 0.7;
+}
+
+footer
+{
+    background: #ffa266;
+    height: auto;
+    width: 100%;
+    padding: 1vw 0;
+    text-align: center;
+    font-size: 1.5vw;
+    color: rgb(69,46,60);
+}
+
+footer a
+{
+    
+    text-decoration: none!important;
+    color:rgb(69,46,60)!important;
+    text-shadow: 1px 1px 1px rgba(244, 78, 125, 0.349);
+}
+
+footer a:hover
+{
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: #F44E7C!important;
+    text-shadow: 1px 1px 1px rgb(69,46,60);
+}
