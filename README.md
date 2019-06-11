@@ -11,6 +11,7 @@ Used HTML and CSS for that first version. Also used Bootstrap because we had to 
 - add my cv
 - probably change the bootstrap elements
 - probably add some visual elements
+- Upload it on my domain to be able to link the result here. 
 
 
 I'm a newbie at coding so it's pretty basic. Suggestions/tips would be life saving ! 
