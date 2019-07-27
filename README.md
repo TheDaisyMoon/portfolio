@@ -2,15 +2,20 @@
 working on my portfolio here, trying to keep track of what I did and what I have to do. 
 
 # What I did (for now) :
-Used HTML and CSS for that first version. Also used Bootstrap because we had to at my bootcamp, but not sure if I'll keep it. I also had fun with some animations, which probably won't stay. I'm pretty happy with the colors I used, but will be trying something else, this is not quite what I want.
+This is the 3rd version and it has to be the last one (for now at least).
+I used HTML, CSS and Bootstrap.
+I did some things in Javascript. 
 
 # What I have to do :
 - Make it accessible.
 - Complete the content
-- Change the colors to try something else
-- add my cv
-- probably change the bootstrap elements
+- The whole design
 - probably add some visual elements
+- Reorganize the css
+- Create a logo ???
+- Find fonts that I actually really like. 
+- Debug the weird stuff it does when it has to be responsive. 
+- Find other ways to make it fun (like the quote generator). 
 - Upload it on my domain to be able to link the result here. 
 
 
