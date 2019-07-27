@@ -1,3 +1,6 @@
+/* REORGANISER LE CSS !!!!!!! */
+
+
 .container-fluid {
     margin: 0;
     padding: 0;
@@ -64,6 +67,13 @@ header {
     height: auto;
     margin: 0;
     padding: 0;
+}
+
+#quote
+{
+    height : auto;
+    border: 1px solid black;
+    cursor: crosshair;
 }
 
 #aboutme {
