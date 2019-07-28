@@ -13,6 +13,7 @@
     <!-- Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet"> 
 
     <!--bootstrap & css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,7 +27,7 @@
     <!-- jquery -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
     <!-- script de l'animation -->
-    <script src="script.js"></script>
+    <script src="script-quotes.js"></script>
 
     <title> Porfolio Magali Milbergue - Développeuse web junior </title>
     
@@ -48,16 +49,15 @@
 
     <div class="container-fluid">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
-            <!--CHANGER ORDRE-->
+        <nav class="navbar navbar-expand-lg sticky-top row justify-content-between ombre">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#aboutme">About me<span class="sr-only"></span></a>
+                <ul class="col-md-8 navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Compétences</a>
@@ -68,10 +68,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html">Contact</a>
                     </li>
-
-
                 </ul>
 
+                <div class="col-md-3">
+                    <a href="https://github.com/TheDaisyMoon" target="blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/magali-milbergue-mm/" target="blank"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/MagaliMilbergue" target="blank"> <i class="fab fa-twitter-square"></i></a>
+                </div>
             </div>
         </nav>
 
@@ -85,14 +88,13 @@
 
                     <!--FAIRE UN LOGO ???-->
                 </div>
-
-
             </div>
 
             <div class="row">
                 <div class="col col-md-2 offset-md-8 selfie align-self-center">
                     <img src="images/Magali-Milbergue3.jpg" alt="portrait de Magali">
                 </div>
+                
             </div>
 
         </header>
@@ -104,246 +106,6 @@
         </div>
 
 
-
-        <main id="portfolio" class="row justify-content-between">
-
-
-
-            <div class="card col-md-4">
-                <div class="card-body">
-
-                    <!--trigger modal : data-toggle & data-target-->
-
-                    <img src="images/minisiteex2.jpg" data-toggle="modal" data-target="#modal1" alt="ex site front 2">
-
-
-                    <!--Modal-->
-                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal1Label">Exercice étudiant site front</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal1-body">
-                                    <p class="card-text m-5">Un exercice de reproduction de site front fait durant ma formation webforce3. (HTML & CSS)
-                                    </p>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light"><a class="lienportf" target="blank"
-                                            href="sitesportfolio/exsitefront2.html">Voir le site</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <!--trigger modal : data-toggle & data-target-->
-                    <img data-toggle="modal" data-target="#modal2" src="images/minisiteex1.jpg" alt="ex site front 1">
-
-
-                    <!--Modal-->
-                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal2Label">Exercice étudiant site front</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body m-5">
-                                    Un exercice de reproduction de site front fait durant ma formation webforce3. (HTML & CSS)
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light"><a class="lienportf" target="blank"
-                                            href="sitesportfolio/exsitefront.html">Voir le site</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <!--trigger modal : data-toggle & data-target-->
-
-                    <img class="card-img boutique" src="images/minisiteex3.jpg" data-toggle="modal"
-                        data-target="#modal3" alt="Card image">
-
-
-                    <!--Modal-->
-                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal3Label">Exercice création boutique front</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body m-5">
-                                    Un exercice de création de boutique fait durant ma formation webforce3. (HTML & Bootstrap)
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light"><a class="lienportf" target="blank"
-                                            href="sitesportfolio/Exercices-bootstrap/exboot1accueil.html">Voir le
-                                            site</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Attention, mettre trigger du modal dans l'image et virer le lien !! -->
-            <div class="card col-md-3">
-                <div class="card-body">
-                    <!--trigger modal : data-toggle & data-target-->
-                    <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal4" </a> <img
-                        class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
-
-
-                    <!--Modal-->
-                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal4Label">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="card col-md-3">
-                <div class="card-body">
-                    <!--trigger modal : data-toggle & data-target-->
-                    <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal5" </a> <img
-                        class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
-
-
-                    <!--Modal-->
-                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal5Label">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="card col-md-3">
-                <div class="card-body">
-                    <!--trigger modal : data-toggle & data-target-->
-                    <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal6" </a> <img
-                        class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
-
-
-                    <!--Modal-->
-                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal6Label">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card col-md-3">
-                <div class="card-body">
-                    <!--trigger modal : data-toggle & data-target-->
-                    <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal7" </a> <img
-                        class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
-
-
-                    <!--Modal-->
-                    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal7Label">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-
-        <!--Générateur de trivia pour séparer les sections ? -->
-
         <section id="aboutme">
             <h2>About me</h2> <!--trouver un autre titre ?-->
             <p>Après des années dans le social, j'ai décidé de changer de métier et ai choisi de me former pour devenir développeuse web. En formation avec Webforce3 depuis début mai 2019, je suis à la recherche d'un stage pour une durée de 6 semaines minimum,commençant en septembre 2019. </p>
@@ -353,9 +115,251 @@
         </section>
 
 
-        <!--autre séparateur-->
+            <!--autre séparateur-->
 
 
+
+        <main id="portfolio">
+
+            <h2>Mes projets</h2>
+
+
+            <div class="row justify-content-around">
+                <div class="card col-md-3">
+                    <div class="card-body">
+
+                        <!--trigger modal : data-toggle & data-target-->
+
+                        <img src="images/minisiteex2.jpg" data-toggle="modal" data-target="#modal1" alt="ex site front 2">
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal1Label">Exercice étudiant site front</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal1-body">
+                                        <p class="card-text m-5">Un exercice de reproduction de site front fait durant ma formation webforce3. (HTML & CSS)
+                                        </p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light"><a class="lienportf" target="blank"
+                                                href="sitesportfolio/exsitefront2.html">Voir le site</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-md-3">
+                    <div class="card-body">
+                        <!--trigger modal : data-toggle & data-target-->
+                        <img data-toggle="modal" data-target="#modal2" src="images/minisiteex1.jpg" alt="ex site front 1">
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal2Label">Exercice étudiant site front</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body m-5">
+                                        Un exercice de reproduction de site front fait durant ma formation webforce3. (HTML & CSS)
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light"><a class="lienportf" target="blank"
+                                                href="sitesportfolio/exsitefront.html">Voir le site</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card col-md-3">
+                    <div class="card-body">
+                        <!--trigger modal : data-toggle & data-target-->
+
+                        <img class="card-img boutique" src="images/minisiteex3.jpg" data-toggle="modal"
+                            data-target="#modal3" alt="Card image">
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal3Label">Exercice création boutique front</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body m-5">
+                                        Un exercice de création de boutique fait durant ma formation webforce3. (HTML & Bootstrap)
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light"><a class="lienportf" target="blank"
+                                                href="sitesportfolio/Exercices-bootstrap/exboot1accueil.html">Voir le
+                                                site</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!--Attention, mettre trigger du modal dans l'image et virer le lien !! -->
+                <div class="card col-md-3">
+                    <div class="card-body">
+                        <!--trigger modal : data-toggle & data-target-->
+                        <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal4" </a> <img
+                            class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal4Label">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card col-md-3">
+                    <div class="card-body">
+                        <!--trigger modal : data-toggle & data-target-->
+                        <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal5" </a> <img
+                            class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal5Label">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card col-md-3">
+                    <div class="card-body">
+                        <!--trigger modal : data-toggle & data-target-->
+                        <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal6" </a> <img
+                            class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal6Label">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card col-md-3">
+                    <div class="card-body">
+                        <!--trigger modal : data-toggle & data-target-->
+                        <a href="sitesportfolio/exsitefront2.html" data-toggle="modal" data-target="#modal7" </a> <img
+                            class="card-img-top" src="images/minisiteex1.jpg" alt="ex site front 1"></a>
+
+
+                        <!--Modal-->
+                        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7Label"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal7Label">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+
+
+        <!--Générateur de trivia pour séparer les sections ? -->
 
 
         <section id="skills">
@@ -396,17 +400,12 @@
             </div>
 
 
-        </section>
+        </section> 
 
         <footer>
             <div class="row justify-content-between">
                 <div class="col-md-3"> copyright</div>
                 <!--Ne pas oublier crédits pour pattern/images-->
-                <div class="col-md-3">
-                    <a href="https://github.com/TheDaisyMoon" target="blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/magali-milbergue-mm/" target="blank"> <i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/MagaliMilbergue" target="blank"> <i class="fab fa-twitter-square"></i></a>
-                </div>
                 <div class="col-md-3"> <a href="CV-Magali-Milbergue.pdf" target="blank">mon cv (pdf)</a>
                 </div>
 
