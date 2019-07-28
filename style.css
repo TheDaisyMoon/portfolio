@@ -1,9 +1,17 @@
 /* REORGANISER LE CSS !!!!!!! */
 
 
+
+/* colors :
+raspberry : #F01945 
+blanc cassé fond : #FFFCDD
+gris-bleu : #1c2923dc 
+*/
+
+
 .container-fluid {
-    margin: 0;
-    padding: 0;
+    margin: 0!important;
+    padding: 0!important;
     background: #FFFCDD;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -24,26 +32,24 @@ header {
 .logo h3 {
     font-size: 3rem;
     font-family: 'Indie Flower'!important;
-    color: black;
+    color: #F01945;
 }
 
 .logo a {
     text-decoration: none!important;
-    font-size: 8rem;
-    font-family: 'Indie Flower'!important;
-    color: black;
+    font-size: 5rem;
+    font-family: 'Jacques Francois Shadow', cursive;
+    color: #F01945;
 }
 
-.col-md-2 {
-    padding: 0;
-}
 
 .navbar a {
     text-decoration: none!important;
+    font-family: 'Indie Flower', cursive;
     padding: 0;
     text-align: center;
     font-size: 2rem;
-    color: black;
+    color: #1c2923dc;
 }
 
 .navbar a:hover {
@@ -51,7 +57,7 @@ header {
     text-align: center;
     font-size: 2.4rem;
     font-weight: bold;
-    color: black;
+    color:#F01945;
 }
 
 
@@ -59,35 +65,43 @@ header {
     text-align: center;
     width: 100%;
     margin: 0;
+    padding : 0;
     height: auto;
+    background:#FFFCDD;
 }
 
-.navbar img {
-    width: 10%;
-    height: auto;
-    margin: 0;
-    padding: 0;
+.ombre:after{
+    content: " ";
+    position: absolute;
+    width:100%;
+    height: 15px;
+    bottom: -15px;
+    left: 0px;
+    box-shadow: 0px 10px 10px -10px #F01945 inset;
 }
+
 
 #quote
 {
+    color: #F01945;
     height : auto;
-    border: 1px solid black;
+    font-size: 2.2rem;
     cursor: crosshair;
+    font-family: 'Jacques Francois Shadow', cursive;
 }
 
 #aboutme {
     text-align: justify;
     padding: 2vw;
-    color: black;
+    color: #1c2923dc;
     font-size: 2rem;
     width: 100%;
 }
 
-#aboutme h2 {
+#aboutme h2, #portfolio h2, #skills h2, #formulaire h2 {
     font-size: 3rem;
     font-family: 'Indie Flower'!important;
-    color: black;
+    color: #F01945;
     font-weight: bold;
 }
 
@@ -106,7 +120,7 @@ header {
 #portfolio {
     padding: 2vh;
     text-align: justify;
-    color: black;
+    color: #1c2923dc;
     font-size: 2rem;
     width: 100%;
 }
@@ -124,48 +138,36 @@ header {
 #skills {
     padding: 2vh;
     text-align: justify;
-    color: black;
+    color: #1c2923dc;
     font-family: 'Indie Flower';
     font-size: 2rem;
     width: 100%;
 }
 
-#skills h2 {
-    font-size: 3rem;
-    color: black;
-    font-weight: bold;
-}
 
 #skills img {
     width: 50%;
     margin: 1vw;
 }
 
-.forcont {
-    padding: 2vh;
-    text-align: justify;
-    color: black;
-    font-size: 2rem;
-    width: 100%;
-}
 
-.forcont h2 {
-    font-size: 3rem;
-    color: black;
-    font-family: 'Indie Flower'!important;
-    font-weight: bold;
-}
 
 footer {
     height: auto;
     width: 100%;
     padding: 1vw 0;
     text-align: center;
-    font-size: 1.5rem;
-    color: black;
+    font-size: 1.2rem;
+    color: #1c2923dc;
+    border-top: 1px solid rgba(240, 25, 68, 0.397);
 }
 
-footer a {
-    text-decoration: none!important;
-    color: black;
+footer a{
+    color: #1c2923dc;
+}
+
+footer a:hover {
+    color: #F01945;
+    text-decoration: none;
+    font-size : 1.5rem;
 }
