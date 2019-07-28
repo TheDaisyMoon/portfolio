@@ -2,18 +2,29 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!--cdn font awesome pour icones-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet"> 
 
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--bootstrap & css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title> Porfolio Magali Milbergue - Contacts</title>
+    <title> Porfolio Magali Milbergue - Développeuse web junior </title>
+
+    <!-- Meta pour SEO -->
+    <meta name="author" content="Magali Milbergue"/>
+    <meta name="copyright" content="©The Daisy Moon"/>
 </head>
 
 
@@ -24,78 +35,82 @@
 
     <div class="container-fluid">
 
-
-        <header>
-
-            <div class="row justify-content-center">
-                <div class="col-md-10 logo">
-                    <h1><a href="index.html">Magali Milbergue</a></h1>
-                    <h3> Développeuse web junior</h3> 
-                </div>
-            </div>
-
-        </header>
-
-
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg sticky-top row justify-content-between ombre">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html#aboutme">About me<span class="sr-only"></span></a>
+                <ul class="col-md-8 navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#skills">Compétences</a>
+                        <a class="nav-link" href="#skills">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html">Contact</a>
                     </li>
-
-
                 </ul>
 
+                <div class="col-md-3">
+                    <a href="https://github.com/TheDaisyMoon" target="blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/magali-milbergue-mm/" target="blank"> <i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/MagaliMilbergue" target="blank"> <i
+                            class="fab fa-twitter-square"></i></a>
+                </div>
             </div>
-        </nav>
+        </nav>        
+        
+        <header>
 
-        <main>
-            <div class="row justify-content-between">
-                <div class="col col-md-6 forcont align-self-start">
-                    <h2>Envoyez-moi un mail !</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Adresse mail</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="votre email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Objet</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
-                                placeholder="L'objet de votre mail" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Une question ?</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
+            <div class="row justify-content-center">
+                <div class="col-md-10 logo">
+                    <h1><a href="index.html">Magali Milbergue</a></h1>
+                    <h3> Développeuse web junior</h3>
                 </div>
-                <div class="col col-md-4 forcont align-self-center">
-                    <h2>Ou contactez-moi directement !</h2>
+            </div>
 
-                    [icone tel] 06 29 43 10 19 <br>
-                    [icone mail] magali.milbergue@gmail.com <br>
-                    [icone linkedin] lien linkedin
+        </header>
 
-                </div>
+        <!-- METTRE SEPARATEUR ??? -->
+        <main id="formulaire">
+            <div class="col-md-8 offset-2 my-3">
+                <h2>Envoyez-moi un mail !</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Adresse mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="votre email" name="email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="objet">Objet</label>
+                        <input type="text" class="form-control" id="objet" placeholder="L'objet de votre mail"
+                            name="objet" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Une question ? Une demande ?</label>
+                        <textarea class="form-control" id="message" rows="20" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light">Envoyer</button>
+                </form>
+            </div>
+            <div class="col-md-8 offset-2">
+                <h2>Ou contactez-moi directement !</h2>
+
+                [icone tel] 06 29 43 10 19 <br>
+                [icone mail] magali.milbergue@gmail.com <br>
+                [icone linkedin] lien linkedin
+
+                <!-- Voir pour faire un hover sur les icones qui montrent les données ??? -->
+
+
             </div>
 
         </main>
@@ -107,12 +122,7 @@
             <div class="row justify-content-between">
                 <div class="col-md-3"> copyright</div>
                 <!--Ne pas oublier crédits pour pattern/images-->
-                <div class="col-md-3">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"> <i class="fab fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/magali-milbergue-mm/"> <i class="fab fa-linkedin"></i></a>
-                    <a href="#"> <i class="fab fa-instagram"></i></a></div>
-                <div class="col-md-3"> <a href="#">mon cv (pdf)</a>
+                <div class="col-md-3"> <a href="CV-Magali-Milbergue.pdf" target="blank">mon cv (pdf)</a> 
                 </div>
 
                 <div class="col-md-3">
@@ -133,9 +143,15 @@
 
 
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
