@@ -8,6 +8,15 @@ blanc cassé fond : #FFFCDD
 gris-bleu : #1c2923dc 
 */
 
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+     overflow-x: hidden; /* pour enlever le scroll */
+}
 
 .container-fluid {
     margin: 0!important;
@@ -31,7 +40,7 @@ header {
 
 .logo h3 {
     font-size: 3rem;
-    font-family: 'Indie Flower'!important;
+    font-family: 'Indie Flower'!important, sans-serif;
     color: #F01945;
 }
 
@@ -45,7 +54,7 @@ header {
 
 .navbar a {
     text-decoration: none!important;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', sans-serif, cursive;
     padding: 0;
     text-align: center;
     font-size: 2rem;
@@ -100,7 +109,7 @@ header {
 
 #aboutme h2, #portfolio h2, #skills h2, #formulaire h2 {
     font-size: 3rem;
-    font-family: 'Indie Flower'!important;
+    font-family: 'Indie Flower'!important, sans-serif;
     color: #F01945;
     font-weight: bold;
 }
@@ -139,7 +148,7 @@ header {
     padding: 2vh;
     text-align: justify;
     color: #1c2923dc;
-    font-family: 'Indie Flower';
+    font-family: 'Indie Flower', sans-serif;
     font-size: 2rem;
     width: 100%;
 }
